@@ -141,3 +141,5 @@ HAVING
     - WHERE type1 = 'Fire'
 - SELECT : 테이블에 저장되어 있는 컬럼 선택
     - col1 AS '별칭'
+ 
+![sql0week](/git/sql1week.png)
