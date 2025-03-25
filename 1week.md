@@ -126,7 +126,7 @@ GROUP BY 컬럼1, 컬럼2
 HAVING
     col1_count>3
 ```
-
+![sqlweek](/git/sql1week_1.png)
 ### 그외
 - 정렬 : ORDER BY(DESC, OSC)
     - 쿼리의 맨 마지막에 작성
@@ -142,4 +142,4 @@ HAVING
 - SELECT : 테이블에 저장되어 있는 컬럼 선택
     - col1 AS '별칭'
  
-![sql0week](/git/sql1week.png)
+![sql1week](/git/sql1week.png)
