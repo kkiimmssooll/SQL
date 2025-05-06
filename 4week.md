@@ -177,12 +177,12 @@ GROUP BY
 ```
 
 1. 포켓몬의'speed'가 70이상이면 '빠름', 그렇지 않으면 '느림'으로 표시하는 새로운 컬럼'Speed_Category'를 만들어주세요.
-# 쿼리 작성 목표/확인 지표 : speed로 구분해서 Speed_Category 만들
-# 쿼리 계산 방법 : if
-# 데이터 기간 :
-# 사용할 테이블 : pokemon
-# Join KEY :
-# 데이터 특징 : 
+- 쿼리 작성 목표/확인 지표 : speed로 구분해서 Speed_Category 만들
+- 쿼리 계산 방법 : if
+- 데이터 기간 :
+- 사용할 테이블 : pokemon
+- Join KEY :
+- 데이터 특징 : 
 ```sql
 SELECT
     *,
@@ -191,12 +191,12 @@ FROM basic.pokemon
 ```
 
 2. 포켓몬의 'type1'에 따라 'Water','Fire','Electric'타입은 각각 '물','불','전기'로, 그외타입은 '기타'로 분류하는 새로운 컬럼 'type_Korean'을 만들어주세요
-# 쿼리 작성 목표/확인 지표 : type1에 따라 type_Korean 만들기
-# 쿼리 계산 방법 : CASE WHEN
-# 데이터 기간 :
-# 사용할 테이블 : pokemon
-# Join KEY :
-# 데이터 특징 : 
+- 쿼리 작성 목표/확인 지표 : type1에 따라 type_Korean 만들기
+- 쿼리 계산 방법 : CASE WHEN
+- 데이터 기간 :
+- 사용할 테이블 : pokemon
+- Join KEY :
+- 데이터 특징 : 
 ```sql
 SELECT 
     id,
@@ -212,12 +212,12 @@ FROM basic.pokemon
 ```
 
 3. 각 포켓몬의 총점(total)을 기준으로, 300이하면 'Low', 301에서 500사이면 'Medium', 501 이상이면'High'로 분류해주세요
-# 쿼리 작성 목표/확인 지표 : total에 따라 변경
-# 쿼리 계산 방법 : CASE WHEN
-# 데이터 기간 :
-# 사용할 테이블 : pokemon
-# Join KEY :
-# 데이터 특징 : 
+- 쿼리 작성 목표/확인 지표 : total에 따라 변경
+- 쿼리 계산 방법 : CASE WHEN
+- 데이터 기간 :
+- 사용할 테이블 : pokemon
+- Join KEY :
+- 데이터 특징 : 
 
 ```sql
 SELECT
@@ -233,12 +233,12 @@ FROM basic.pokemon
 ```
 
 4. 각 트레이너의 배지 개수(badge_count)를 기준으로, 5개 이하면'Beginner',6개에서 8개사이면 'Intermediate', 그 이상이면'Advanced'로 분류해주세요.
-# 쿼리 작성 목표/확인 지표 : badge_count 값 변경
-# 쿼리 계산 방법 : CASE WHEN
-# 데이터 기간 :
-# 사용할 테이블 : trainer
-# Join KEY :
-# 데이터 특징 : 
+- 쿼리 작성 목표/확인 지표 : badge_count 값 변경
+- 쿼리 계산 방법 : CASE WHEN
+- 데이터 기간 :
+- 사용할 테이블 : trainer
+- Join KEY :
+- 데이터 특징 : 
 
 ```sql
 SELECT
@@ -254,12 +254,12 @@ FROM basic.trainer
 ```
 
 5. 트레이너가 포켓몬을 포획한 날짜(catch_date)가 '2023-01-01'이후이면 'Recent', 그렇지 않으면 'Old'로 분류해주세요
-# 쿼리 작성 목표/확인 지표 : 포획 날짜 기준 값 변경
-# 쿼리 계산 방법 : IF
-# 데이터 기간 :
-# 사용할 테이블 : trainer_pokemon
-# Join KEY :
-# 데이터 특징 : 
+- 쿼리 작성 목표/확인 지표 : 포획 날짜 기준 값 변경
+- 쿼리 계산 방법 : IF
+- 데이터 기간 :
+- 사용할 테이블 : trainer_pokemon
+- Join KEY :
+- 데이터 특징 : 
 
 ```sql
 SELECT
