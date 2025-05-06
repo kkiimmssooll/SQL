@@ -24,7 +24,7 @@
 이후 데이터 분석에서 어떻게 활용할지에 따라 다르다
 1시간 단위로 수요를 집계해야 하는 경우 DATETIME_TRUNC
 
-## 4.5 시간 데이터 연습 문제(1)
+## 4-5 시간 데이터 연습 문제(1)
 1. 트레이너가 포켓몬을 포획한 날짜(catch_date)를 기준으로, 2023년 1월에 포획한 포켓몬의 수를 계산해주세요. 
 - 쿼리 작성 목표/확인 지표 : 포켓몬의 수
 - 쿼리 계산 방법 : COUNT
@@ -60,7 +60,7 @@ WHERE
     # EXTRACT(HOUR FROM battle_datetime) BETWEEN 6 and 18도 가능!
 ```
 
-## 4.5 시간 데이터 연습 문제(2)
+## 4-5 시간 데이터 연습 문제(2)
 
 3. 각 트레이너별로 그들이 포켓몬을 포획한 첫날(catch_date)을 찾고, 그 날짜를 'DD/MM/YYYY' 형식으로 출력해주세요. (2024-01-01=>01/01/2024)
 - 쿼리 작성 목표/확인 지표 : 포획 첫날을 ''DD/MM/YYYY' 형식으로 출력
@@ -132,7 +132,7 @@ ORDER BY
     diff
 ```
 
-## 4.6 조건문(CASE WHEN, IF)
+## 4-6 조건문(CASE WHEN, IF)
 - 특정 카테고리를 하나로 합치는 경우
 ### CASE WHEN
 - 여러 조건일 때 사용
@@ -158,7 +158,7 @@ GROUP BY
 - 단일 조건일 때 유용
 - IF(조건문, true일 때 값, false일 때 값) AS 새로운 컬럼명
 
-## 4.7 조건문 연습 문제
+## 4-7 조건문 연습 문제
 ```sql
 SELECT
     new_type1,
@@ -271,7 +271,7 @@ SELECT
 FROM basic.trainer_pokemon
 ```
 
-## 4.8 정리
+## 4-8 정리
 1. 숫자
     - 사칙연산
     - SAFE_DIVIDE : 연산이 안되면 NULL 반환
@@ -286,7 +286,7 @@ FROM basic.trainer_pokemon
     - DATETIME_TRUNC
     - PARSE_DATETIME
 
-## 4.9 BigQuery 공식 문서 확인
+## 4-9 BigQuery 공식 문서 확인
 - 지피티도 최근 문서는 모를수도 있기 때문에 알아두는 것이 좋음
 > "기술명+ documentation"으로 검색
 
