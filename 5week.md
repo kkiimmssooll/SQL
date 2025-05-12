@@ -91,4 +91,4 @@ ON A.key=B.key
 ![sql5week7](/git/sql5week_7.png)
 
 # 수행 인증
-![sql5week8](/git/sql5week_8.png)
+![sql5week8](/git/sql5week.png)
