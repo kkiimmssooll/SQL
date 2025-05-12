@@ -28,6 +28,8 @@ ex
 - CROSS JOIN
     - a테이블 로우 * b테이블 로우
     - 데이터가 뻥튀기 될 수 있으니 주의!!
+![sql5week1](/git/sql5week_1.png)
+![sql5week2](/git/sql5week_2.png)
 
 ## 5-4. JOIN 쿼리 작성하기
 테이블 확인->기준 테이블 정의->JOIN Key 찾기->결과 예상하기(손, 엑셀로 작성)->쿼리 작성/검증
@@ -62,3 +64,31 @@ ON A.key=B.key
     - 값이 없음!
     - 0이나 공백과는 다름
     - JOIN에선 연결할 값이 없는 경우 나타남
+
+## 5-6.
+1. 트레이너가 보유한 포켓몬들은 얼마나 있는지 알 수 있는 쿼리를 작성해주세요.
+```
+단계별로 하나씩 작성하고 실행하면서 확인하기!
+1) status가 Active, Training인 것만을 필터링(WHERE)
+2) 필터링 후 pokemon과 조인(서브쿼리 사용)
+```
+![sql5week3](/git/sql5week_3.png)
+
+2. 각 트레이너가 가진 포켓몬중에서 'Grass' 타입의 포켓몬 수를 계산해주세요(단, 편의를 위해 type1 기준으로 계산해주세요)
+![sql5week4](/git/sql5week_4.png)
+
+3. 트레이너의 고향(hometown)과 포켓몬을 포획한 위치(location)를 비교하여, 자신의 고향에서 포켓몬을 포획한 트레이너의 수를 계산해주세요.
+![sql5week5](/git/sql5week_5.png)
+
+4. Master 등급인 트레이너들은 어떤 타입의 포켓몬을 제일 많이 보유하고 있을까요?
+![sql5week6](/git/sql5week_6.png)
+
+5. Incheon 출신 트레이너들은 1세대, 2세대 포켓몬을 각각 얼마나 보유하고 있나요?
+```
+1) trainer와 pokemon의 정보가 필요한데, 얘네 둘을 직접적으로 묶을 key가 없으므로 중간에 trainer_pokemon으로 조인
+2) 보유는 status IN ("Active","Training")
+```
+![sql5week7](/git/sql5week_7.png)
+
+# 수행 인증
+![sql5week8](/git/sql5week_8.png)
